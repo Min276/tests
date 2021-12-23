@@ -1,0 +1,27 @@
+{
+    "name":"Tweet Assistance",
+    "short_name":"Tweet Assist",
+    "description": "This PWA Tweet Assist will mainly help you convenient with your text tweets.",
+    "start_url": "index.html",
+    "icons":[
+       {
+        "src":"favicon/android-chrome-192x192.png",
+        "sizes":"192x192","type":"image/png"
+      },
+      {
+        "src":"favicon/android-chrome-512x512.png",
+        "sizes":"512x512","type":"image/png"
+    }],
+    "images" : [     
+      {
+        "src":  "favicon/tweet_assist.png"
+      }, {
+        "src":  "favicon/internet_error.png"
+      }, {
+        "src":  "favicon/internet_ok.png"
+      }
+    ],
+    "theme_color":"#03a9f4",
+    "background_color":"#ffffff",
+    "display":"standalone"
+}

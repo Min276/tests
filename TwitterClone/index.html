@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<title>Tweet Assist</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#03a9f4">
+<!-- Favicon  -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<meta name="description" content="This PWA Tweet Assist will mainly help you convenient with your text tweets.">
+    <meta name="author" content="Min Khant Kyaw">
+    <meta name="image" content="https://min276.github.io/TweetAssist/favicon/tweet_assist.png">
+     <!-- <meta http-equiv="refresh" content="60"> -->
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site" content="https://min276.github.io/TweetAssist/" />
+	<meta property="og:title" content="Tweet Assist"/> 
+	<meta property="og:description" content="This PWA Tweet Assist will mainly help you convenient with your text tweets." /> 
+	<meta property="og:image" content="https://min276.github.io/TweetAssist/favicon/tweet_assist.png" /> 
+	<meta property="og:url" content="https://min276.github.io/TweetAssist/" /> 
+	<meta property="og:type" content="Tweet Assist" />
+	<meta property="og:site_name" content="Tweet Assist" /> 
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link href="css/jquery.hashtags.css" media="all" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+#change{
+background: #03a9f4;
+padding: 8px;
+border-radius: 20px;
+color: #ffffff;
+border: 2px solid #ffc107;
+font-size: 16px;
+cursor: pointer;
+}
+#change:focus{
+outline: none;
+background: black;
+border: 2px solid #f44336;
+}
+#change:hover{
+border: 2px solid #f44336;
+/* border-color: #ffc107!important; */
+}
+#add-button{
+    width: 98%;
+    padding: 13px;
+    margin: auto;
+    background: white;
+    /* -webkit-mask-composite: xor; */
+    color: #03a9f4;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-color: #607d8b;
+}
+#add-button:hover{
+  border-color: #03a9f4!important;
+}
+@media (max-width: 1327px){
+	#welcome {
+		padding-top: 10px!important;
+	}
+}
+</style>
+</head>
+<body id="backg">
+<h3 id="welcome">Hello, <span id="username"></span><span id="time"></span><span id="twit">Tweet Assist</span> ! <button id="change" onclick="doStart();"><i class="fas fa-microphone-slash"></i></button></h3>
+
+
+<form action="https://twitter.com/home" id="goTweet" method="GET">
+<textarea name="status" rows="7" cols="30" id="textmessage" placeholder="What is happening ?" spellcheck="true" required></textarea>
+</form>
+
+<p id="count"><span id="statusCount"></span><span id="remainCount"></span></p>
+<br>
+
+<button id="submit" type="submit" form="goTweet"><i class="fab fa-twitter"></i> Tweet</button>
+<!-- <button id="short" onclick="doCut();">Shorten</button> -->
+<button id="copy" onclick="doCopy()"><i class="fas fa-copy"></i></button>
+<button id="delete" onclick="doClear()"><i class="fa fa-trash"></i></button>
+
+<button id="showDate"></button>
+
+<button id="nightmode" onclick="changeNight()"><i class="fa fa-fw fa-moon-o" style="font-size:17px;color:white"></i></button>
+<button id="add-button">Add to home screen</button>
+
+</body>
+<script src="https://kit.fontawesome.com/bbdccb4e58.js" crossorigin="anonymous"></script>
+<!--JQuery Plugin-->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/autosize.min.js"></script>
+<script src="js/jquery.hashtags.js"></script>
+<!--End-->
+<script src="js/speechRecognition.js"></script>
+<script src="js/index.js"></script>
+<script src="js/autochange.js"></script>
+<script src="js/backend.app.js"></script>
+<script src="connectivity.js"></script>
+</html>

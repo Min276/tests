@@ -1,0 +1,39 @@
+.highlighter{
+  white-space: pre-wrap;
+	color:transparent;
+	overflow: hidden; 
+	position: absolute;
+	padding: 11px;
+	font-family: sans-serif;
+	font-size:17px;
+	line-height:20px;
+	width: auto;
+}
+.jqueryHashtags .theSelector{
+	background-color: transparent!important; 
+	position: relative; 
+	direction: ltr; 
+	font-size:17px;
+	font-family: sans-serif;
+	resize:none !important;
+	-webkit-transition: height 0.2s;
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 4px 6px;
+	vertical-align:middle;
+	min-height:48px !important;
+	line-height:20px;
+}
+
+.jqueryHashtags .hashtag{
+	/* background: -webkit-linear-gradient(#dce6f8, #bdcff1); */
+	background: #c3c3b994;
+	border-radius: 2px;
+	box-shadow: 0 0 0 1px #c3c3b994;
+	font-size:17px;
+	white-space: pre-wrap;
+	word-break: break-word;
+	line-height:20px;
+}
